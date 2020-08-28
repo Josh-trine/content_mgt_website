@@ -1,15 +1,30 @@
 body {
     background-color: powderblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
-    color: blue;
 }
 
+h1-title {
+    border: solid 2px black;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+h2-uLine {
+    border-bottom: solid 2px;
+}
 p {
-    color: red;
+    color: dimgrey;
 }
 
 blog-post {
     background-color: white;
+    padding: 24px;
+}
+
+header {
+    background-color: white;
+    padding: 24px;
 }

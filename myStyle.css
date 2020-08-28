@@ -1,8 +1,9 @@
 body {
     background-color: powderblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left:64px;
-    padding-right:64px;
+    margin-left:64px;
+    margin-right:64px;
+    width: 75vw;
 }
 
 h1 {

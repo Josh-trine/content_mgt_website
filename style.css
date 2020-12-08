@@ -11,6 +11,7 @@
     --title-text: #0;
     --title-text-hover: #0;
     --title-text-visit: #0;
+    --padding-color: #0;
 }
 
 .second {
@@ -35,8 +36,10 @@ url {
 
 .result {
     min-height: 4em;
-    padding: 20px;
-    border-bottom: solid 1px var(--info-text);
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--padding-color);
+    border: solid 1px var(--info-text);
 }
 
 
@@ -50,19 +53,15 @@ title-result {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 22px;
-    line-height: 1.273;
+    line-height: 1.373;
     max-width: 100%;
-    margin-bottom: 3px;
     font-family: Google Sans,arial,sans-serif;
     letter-spacing: 0.3px;
     position: relative;
-    top: 1px;
     font-weight: normal;
-    margin: 0;
-    padding: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,.10);
     cursor: pointer;
-    text-align: left;
+    text-align: right;
     text-decoration: none;
 }
 
@@ -94,10 +93,12 @@ info {
     font-size: 14px;
     font-weight: normal;
     border: 0;
+    padding-top: 10px;
 }
 
 .top-bar {
     background-color: var(--main-bg-color);
+    border-bottom: solid 1px var(--info-text);
 }
 
 #center {
@@ -199,40 +200,18 @@ input:focus {
 }
 
 body {
-    --text-color: #222;
-    --bkg-color: #fff;
     margin: 0px;
 }
 
     body.dark-theme {
-        --text-color: #eee;
-        --bkg-color: #121212;
     }
 
 @media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
     body {
-        --text-color: #eee;
-        --bkg-color: #121212;
     }
 
         body.light-theme {
-            --text-color: #222;
-            --bkg-color: #fff;
         }
-}
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background: var(--bkg-color);
-}
-
-h1,
-p {
-    color: var(--text-color);
 }
 
 .btn-toggle {
@@ -290,4 +269,6 @@ p {
     font-family: sans-serif;
     display: inline;
 }
+
+
 
